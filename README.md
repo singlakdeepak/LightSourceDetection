@@ -3,6 +3,10 @@ Finds out the azimuthal and zenith angles of all the ligths falling on an image 
 
 
 ## Usage
+Import the main file [**light_detection.py**](light_detection.py) in your Python script. Run the helper function: 
+```
+give_images_light_detection(<RGB Image>, <Silhouette>, <No of lights>)
+```
 * Inputs: 
     *  An RGB Image
     *  Silhouette in binary format (0: where it is not there otherwise 1)
