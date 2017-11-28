@@ -261,9 +261,7 @@ def calculate_zenith_angle(Image, Silhouette,
                           light_angles,
                           azmX, azmY):
     Image = cv2.bilateralFilter(Image,9,75,75)
-    %matplotlib inline
-    plt.imshow(Image)
-    plt.show()
+
     Rimg, Gimg, Bimg = Image[:,:,0], Image[:,:,1], Image[:,:,2]
     luminance = 0.2989 * Rimg + 0.5870 * Gimg + 0.1140 * Bimg
     print('Light angles are', light_angles)
